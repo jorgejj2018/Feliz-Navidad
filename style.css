@@ -1,0 +1,65 @@
+:root{
+    --fondo-body: #cae2e6;
+    --fondo-header: #F4D03F;
+    --fondo-ctn:#0001;
+    --fondo-secciones: rgb(188, 220, 229);
+
+    --color-nav-link: #A9CCE3;
+    
+    --font-size:30px;
+    --font-size-clock:18px;
+    --font-size-btnScroll:35px;
+    --font-color1:#34495E ;
+    --font-color2:#D6DBDF;
+
+    --font-fami1:'Segoe UI';
+    --font-fami2:'Segoe UI', cursive;
+    --color-btnClock: rgba(245, 106, 13, 0.835);
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body{
+    background-color:var(--fondo-body);
+}
+
+h1,h3{
+    font-size: var(--font-size);
+    color: var(--font-color1);
+    font-family: var(--font-fami1);
+    }
+
+h2{
+    text-align: center;
+    font-size: var(--font-size);
+    color: var(--font-color1);
+    font-family: var(--font-fami2);
+}
+ .secciones{
+    background-color: var(--fondo-secciones);
+    width:100%;
+    height: 80vh;
+    margin-bottom: 0.5%;
+}
+.ctn-time{
+    background-color:#0001;
+    width:auto;
+    height:20vh;
+    margin:10% auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ctn-time .formlg{
+    background-color: coral;
+    width:auto;
+    height:10vh;
+}
+
+.pass-input{
+margin:auto auto;
+}
