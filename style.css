@@ -1,5 +1,5 @@
 :root{
-    --fondo-body: #cae2e6;
+    --fondo-body:linear-gradient(to left, #654ea3, #eaafc8);    ;
     --fondo-header: #F4D03F;
     --fondo-ctn:#0001;
     --fondo-secciones: rgb(188, 220, 229);
@@ -23,8 +23,8 @@
     box-sizing: inherit;
 }
 
-body{
-    background-color:var(--fondo-body);
+body *,body{
+    background:var(--fondo-body);
 }
 
 h1,h3{
