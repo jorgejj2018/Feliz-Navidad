@@ -1,0 +1,85 @@
+:root{
+    --bg-trans:#0001;
+    --bg-color-ctn:#152735;
+    --bg-color-ctn-card:#97BBE4;
+    --bg-color-ctn-btnVideo:#F64F59;
+    --bg-body2:#f64f59;
+    --bg-body3:#c471ed;
+    --bg-body1:#12c2e938;
+    --bg-body-gradient:linear-gradient(to left, #f64f5a9d, #c471ed, #12c2e9);
+    --bg-body-gradient2:linear-gradient(to left, #654ea383, #eaafc8);
+    --bg-body-gradient3: linear-gradient(to left, #0f0c29, #302b63, #24243e);
+    
+    --font-color-red:#FF2828;
+    --font-color-black:#001;
+    --font-color-white:#F4F7FC;
+    --font-fm-text: 'Segoe UI';
+    --font-fm-text2:'Langar', 'cursiva';
+    --font-text-size: 25px;
+    --font-text-size-s: 15px;
+    --font-text-size-m: 20px;
+    --font-text-size-footer-movil: 24px;
+}
+h1,title{
+    color: var(--font-color-black);
+    font-family:var(--font-fm-text);
+}
+p{
+    color: var(--font-color-black);
+    font-size: var(--font-text-size);
+    font-family: var(--font-fm-text);
+}
+span{
+    color: var(--font-color-);
+    font-size: var(--font-text-size);
+    font-family: var(--font-fm-text);
+}
+hr{
+    height:0.2vh;
+    background-color:var(--bg-color-ctn);
+}
+.ctn-letter{
+    background:var(--bg-body-gradient2);
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    z-index:997;
+    }
+
+.ctn-textCard{
+    background:var(--bg-body-gradient2);
+    width:70vw;
+    height:85vh;
+    margin: auto;
+    border-radius:2%;
+    box-shadow: 5px 25px 25px #0001;
+    text-align: center;
+}
+
+.btn-back{
+    position: fixed;
+    bottom:1vh;
+    left:2vw;
+    width: 4rem;
+    height:4rem;
+    border-radius: 50%;
+    border:none;
+    outline: 0;
+    cursor: pointer;
+    
+}
+.btn-back:hover{
+    background-color: var(--bg-color-ctn);
+}
+
+@media screen and (min-width:320px) and (max-width:770px ){
+    .ctn-textCard{
+        width: 90vw;
+        margin:0.1% auto;
+        overflow-y:auto;
+    }
+
+}

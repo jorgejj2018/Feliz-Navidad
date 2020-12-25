@@ -34,9 +34,9 @@ html{
     overflow:hidden;
 }    
 body{
- background: var(--bg-body-gradient);
+ background: var(--bg-color-ctn);
 }
-h1{
+h1,title{
     color: var(--font-color-red);
     font-family:var(--font-fm-text);
 }
@@ -55,14 +55,30 @@ p{
     text-align:center;
     font-size: var(--font-text-size-m);
 }
-
+a{
+    color:var(--font-color-black) ;
+    font-family:var(--font-fm-text);
+    text-decoration: none;
+    text-align:center;
+    font-size:40px;
+    font-weight: bold;
+    border:solid 2px black;
+    border-radius:5%;
+}
+a:hover{
+    background-color: var(--font-color-white);
+    transform: scale(1.2);
+    transition: transform 0.6s ease-in-out;
+}
 .ctn-sections{
-    background-color: var(--bg-trans);
+    background: var(--bg-body-gradient);
     width:90vw;
     height:85vh;
     margin: 2% auto;
     display:flex;
     justify-content: space-evenly;
+    box-shadow: -10px -10px 15px #f64f59;
+    border-radius: 3%;
 }
 /* info left */
 .ctn-left{
@@ -70,9 +86,10 @@ p{
     height:80vh;
     margin:2% 2%;
     display: flex;
+    
 }
 .ctn-previewCard{
-    background:var(--bg-body-gradient2);
+    background:var(--bg-trans);
     background-repeat: no-repeat;
     background-size: cover;
     width:80vw;
@@ -83,6 +100,8 @@ p{
     justify-content: space-around;
     align-items: center;
     opacity:0.8;
+    border-radius: 2%;
+
 }
 
 .ctn-previewCard .info-left{
@@ -93,6 +112,7 @@ p{
     justify-content: center;
     align-content: center;
     align-items: center;
+    border-radius: 2%;
 }
 .ctn-previewCard .title-card{
     background-color: var(--bg-body1);
@@ -109,11 +129,13 @@ p{
 
 /* info right */
 .ctn-right{
-    background:var(--bg-body-gradient2);
+    background:var(--bg-trans);
     width:40vw;
     height:75vh;
     margin:3.5% 2%;
     display: flex;
+    border-radius: 2%;
+
 }
 .ctn-right .ctn-info{
     width:80vw;
@@ -131,14 +153,15 @@ p{
     justify-content: center;
     align-content: center;
     align-items: center;
+    border-radius: 2%;
 }
 /* info right top */
 .img-top{
     width:38vw;
-    height:40vh;
-    background-image:url(asset/img/Acendrado.jpg);
-    background-repeat: no-repeat;
-    background-size:100%;
+    height:30vh;
+    background-image:url(asset/img/preview.jpg);
+    background-repeat:round;
+    background-size:cover;
 }
 /* info rght video */
 .btn-vid{
@@ -165,17 +188,20 @@ p{
 }
 
 footer{
-    background:var(--bg-body-gradient3);
+    background:var(--bg-body-gradient);
     width:100vw;
     height:8vh;
     margin-top: 1%;
     font-size: var(--font-text-size);
     text-align: center;
+    z-index: 996;
 }
-
 @media screen and (min-width:768px) and (max-width:1023px ){
     html{
         overflow:auto;
+    }
+    body{
+        background: var(--bg-color-ctn);
     }
     .ctn-sections{
 

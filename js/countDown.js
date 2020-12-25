@@ -23,7 +23,7 @@ export default function countDown (id,date,html,css){
         
         if(limitTime <= 0 ){
             clearInterval(countDownTempo)
-            let titlepass = $countdown.innerHTML = `<h3>Que Esperas?</h3>`
+            let titlepass = $countdown.innerHTML = `<h1>🎅Ready🤶</h1>`
             const $inputLg = d.createElement('input')
             $inputLg.setAttribute('class','inputlg')
             $inputLg.setAttribute('maxlength','12')
@@ -35,18 +35,17 @@ export default function countDown (id,date,html,css){
             d.addEventListener('input', e =>{
                 if(e.target.matches('.inputlg')){
                     console.log($inputLg.value)
-                    if($inputLg.value.toLowerCase() === 'infinito'){
-                       const $linkcss = d.querySelector('link'),
-                        $removetitlePrimary = d.querySelector('.title-section')
+                    if($inputLg.value.toLowerCase() === 'infinito' ||$inputLg.value.toLowerCase() === 'etereo'||$inputLg.value.toLowerCase() === 'inefable'||$inputLg.value.toLowerCase() === 'acendrado'||$inputLg.value.toLowerCase() === 'nefelibata'||$inputLg.value.toLowerCase() === 'serendipia'||$inputLg.value.toLowerCase() === 'petricor' ){
+                       const $linkcss = d.querySelector('link');
                        $linkcss.setAttribute('href' , $LinkCssPreview)
-                        titlepass = $countdown.innerHTML = `
+                        $countdown.innerHTML = `
                         <div class="ctn-sections">
                         <article class="ctn-left">
                             <section class="ctn-previewCard">
                                 <div class="info-left title-card">
                                 <p>
-                                    Este año fue muy duro a nivel personal,social,familiar,economico y sobre todo emocional
-                                    por ese motivo te invito a abrir esta carta</p>
+                                    Este año Fue Muy Duro A Nivel Personal,Social,Familiar,Economico y Sobre Todo Emocional
+                                    Por Ese Motivo Te Invito A Abrir Esta Carta</p>
                                 </div>
                                 <div class="info-left btn-open-card"><button class="btn-vid" id="btnLt"><h3>Abrir</h3></div>
                             </section>
@@ -55,7 +54,9 @@ export default function countDown (id,date,html,css){
                         <article class="ctn-right">
                             <section class="ctn-info">
                                 <div class="info-right"><img class="img-top"></div>
-                                <div class="info-right img-vid"><button  class="btn-vid" id="btnVideo"><h3>Ver</h3></button></div>
+                                <div class="info-right img-vid">
+                                <a href="https://vimeo.com/494539800">Ver Video</a>
+                                </div>
                             </section>
                         </article>
                         </div>
